@@ -1,65 +1,79 @@
-# DSA210-Youtube-Analysis
-I spend a significant amount of time on YouTube, whether it's for learning new things or simply having fun. From tutorials to entertainment, YouTube has become an integral part of my routine. This project is my attempt to explore and analyze how I engage with the platform and uncover meaningful patterns in my viewing behavior.
+#YouTube Watch History Analysis
 
-My interests are very diverse, and my watch history reflects that. Some of the content categories I enjoy include:
 
-- Gaming: Gaming content is a big part of my YouTube time.
-- Food: Cooking tutorials, recipe videos, and food reviews.
-- Sports: I follow NBA and football, both for the latest updates and highlights of memorable games.
-- Psychology: Videos that dive into the human mind, behavior, and self-improvement topics fascinate me.
-- Technology: News, reviews, and deep dives into the latest tech advancements keep me informed.
-- Music: My playlists are full of hip-hop and electronic music, and I enjoy exploring new tracks and remixes.
+YouTube has become an integral part of my daily life, serving as a source of entertainment, education, and inspiration. From tutorials to entertainment, it offers endless content for both productivity and relaxation. This project explores my YouTube watch history to uncover meaningful patterns, validate hypotheses, and gain actionable insights into my viewing behavior.
+
+##Motivation
+My interests span across a diverse range of topics, and my watch history reflects this variety. By analyzing my data, I aim to:
+
+- Understand how my preferences translate into viewing habits.
+- Identify time-based viewing patterns.
+- Make more intentional choices about content consumption.
+##Interests and Categories
+Some of the key content categories I enjoy include:
+
+- Gaming: Videos related to games, esports, and live streams are a significant part of my viewing activity.
+- Music: I explore a variety of hip-hop and electronic music, often diving into DJ sets and live performances.
+- Sports: Highlights, updates, and commentary on NBA and football games keep me informed and entertained.
+- Technology: Deep dives into the latest advancements, product reviews, and tutorials fuel my curiosity.
+- Psychology: Exploring videos on self-improvement, human behavior, and mental health fascinates me.
+- Food: Cooking tutorials, recipe videos, and food reviews inspire my culinary experiments.
+##Project Objectives
+This project combines personal interest and data science techniques to analyze my YouTube watch history and answer key questions:
+
+- What are my most-watched genres?
+Discover the content categories that dominate my screen time.
+
+- How does my viewing behavior vary across time?
+Identify patterns by the hour of the day, day of the week, and working vs. non-working hours.
+
+- What trends emerge in my preferences?
+Understand how my preferences evolve over time and how specific channels influence my interests.
+##Dataset
+The dataset is extracted from my personal YouTube watch history using Google Takeout and contains:
+
+- Video Titles: The names of the videos I have watched.
+- Timestamps: The exact date and time of each video.
+- Categories: Content types, such as music, gaming, education, or entertainment.
+- Channels: Information on the content creators and their influence on my preferences.
   
-Through this project, I aim to understand how my interests translate into viewing habits. I hope to identify:
+##Data Preprocessing
+- Parsed timestamps to extract key information such as the hour of the day and day of the week.
+- Categorized videos into predefined content genres.
+- Cleaned data by removing duplicates and irrelevant entries.
+##Analysis Plan
+###Exploratory Data Analysis (EDA)
+- Content Preferences:
+Identify dominant categories (e.g., Gaming, Music) and influential channels.
 
-- My Most-Watched Genres: What type of content takes up the most screen time?
-- Viewing Patterns: Are there specific times when I’m more likely to watch educational content versus entertainment?
-- Personal Trends: How do my preferences evolve over time?
-This analysis will not only provide insights into my habits but also serve as a way to reflect on my screen time and make more intentional choices about my content consumption. Plus, it’s a fun way to combine my personal interests with data science!  
+- Time-Based Trends:
+Analyze activity by hour, day, and working vs. non-working hours.
 
+- Viewing Patterns:
+Uncover trends in weekday vs. weekend activity and peak times of viewing.
 
+##Visualizations
+- Bar Charts: Highlight the distribution of categories and hourly activity.
+- Heatmaps: Show time-based patterns for content consumption.
+- Word Clouds: Represent frequently watched video titles and themes.
+  
+##Hypothesis Validation
+The hypothesis tested in this project is:
+"I watch more YouTube outside of regular 9–17 working hours, and usually close to midnight."
+Through time-based analysis, the data confirms that most of my viewing occurs during non-working hours, with significant peaks close to midnight.
 
-## Dataset
-
-The dataset is extracted from my personal YouTube watch history using Google Takeout. It contains:
-
-- Video Titles: Names of the videos I have watched.
-- Timestamps: The exact time each video was watched.
-- Categories: Types of content, such as music, education, or entertainment.
-- Devices Used: Information on whether I watched on a phone, laptop, computer, or TV.
-
-
-## Project Idea and Plan
-### Project Idea
-This project aims to analyze my YouTube watch history to understanding trends and patterns in my viewing habits. By examining my personal data, I intend to explore what types of content I consume the most, identify my peak activity times, and gain insights into how my preferences reflect my interests in gaming, sports, food, technology, music, and psychology. The project combines data analysis and visualization techniques to transform raw data into meaningful insights.
-
-
-### Project Plan
-Data Collection and Preparation:
-
-- Extract watch history using Google Takeout.
-- Clean and preprocess the data to remove duplicates and format it for analysis.
-
-
-Exploratory Data Analysis (EDA):
-
-- Identify the most-watched genres and categories.
-- Analyze time-based trends (e.g., viewing activity by time of day and day of the week).
-- Explore relationships between content types and viewing behaviors.
-
-
-Visualization:
-
-- Use bar charts, heatmaps, and word clouds to represent trends and insights visually.
-
-
-Insights and Reporting:
-
-- Summarize findings to better understand my content consumption patterns.
-- Highlight areas for improvement, such as balancing entertainment with educational content.
-
-Future Work:
-
-- Expand the analysis to include data from other platforms.
-- Combining it with other data to see what I watched where.
-- Explore predictive modeling to forecast future viewing preferences.
+##Key Insights
+- Content Preferences: Music, Gaming, and Entertainment dominate my watch history. Channels like Crossover Talks and Boiler Room significantly influence my viewing.
+- Time Patterns: Most videos are watched during non-working hours, peaking between 9 PM and midnight.
+- Weekday vs. Weekend Trends: Higher activity on weekends correlates with more free time.
+##Future Work
+- Dataset Expansion:
+Include data from other platforms like Netflix and Spotify for a holistic view of digital consumption.
+- Category-Specific Insights:
+Dive deeper into Music genres, Gaming preferences, and specific creators.
+- Predictive Modeling:
+Use machine learning techniques to predict future viewing preferences based on past trends.
+- Content Balance Analysis:
+Investigate the balance between entertainment and educational content to optimize screen time for personal growth.
+##Conclusion
+This analysis not only validates my viewing patterns but also provides actionable insights for intentional content consumption. It demonstrates the value of data science in uncovering trends in everyday behavior and offers a foundation for making better decisions about digital habits.
